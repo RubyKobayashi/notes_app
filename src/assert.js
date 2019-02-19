@@ -1,10 +1,18 @@
 var assert = {
-  isTrue: function(assertionToCheck) {
+  isEqual: function(assertionToCheck) {
     if (!assertionToCheck) {
       throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
-    }
-  }
-  isEqual: function(){
-  };
+    } else {
+        console.log('Pass')
+      }
+    },
 
+
+  isNote: function(assertionToCheck){
+    if (!assertionToCheck) {
+      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+    } else {
+      console.log('Pass')
+    }
+  },
 };
