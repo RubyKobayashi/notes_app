@@ -1,5 +1,10 @@
+// console.log(1 + assert.isEqual)
+// console.log(2 + isNote)
+// console.log(3 + assert.checkNotes)
+
 
   function testCreate(){
+    // debugger
     var notelist = new NoteList()
     var note = notelist.create("Go shopping")
     isNote(note)
@@ -13,13 +18,7 @@
     console.log(notelist.showNotes)
     var test_array = [note1, note2]
     for (i = 0; i < notelist.showNotes().length; i++ ){
-      if(!notelist.showNotes()[i].displayNote() === test_array[i].displayNote()){
-        throw new Error("Not equal")
-      } else {
-        console.log('Pass')
-      }
-
-
+    assert.checkNotes(notelist.showNotes()[i].displayNote() === test_array[i].displayNote())
     }
     // assert.isEqual(notelist.showNotes() === [note)
   }
