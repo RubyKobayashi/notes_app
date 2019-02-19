@@ -8,13 +8,6 @@
     assert.isNote(note.__proto__.constructor.name === constructor_name)
   }
 
-  function testCreate(){
-    var notelist = new NoteList()
-    var note = notelist.create("Go shopping")
-    isNote(note)
-    testDisplayNote()
-  }
 
   testDisplayNote();
   isNote(new Note('Hello'))
-  testCreate();
