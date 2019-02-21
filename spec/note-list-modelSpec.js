@@ -1,5 +1,5 @@
 // console.log(1 + assert.isEqual)
-// console.log(2 + isNote)
+// console.log(2 + assert.isNote)
 // console.log(3 + assert.checkNotes)
 
 
@@ -7,7 +7,7 @@
     // debugger
     var notelist = new NoteList()
     var note = notelist.create("Go shopping")
-    isNote(note)
+    testisNote(note)
     testDisplayNote()
   }
 
