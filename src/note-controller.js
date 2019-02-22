@@ -9,17 +9,22 @@
 
 
  NoteController.prototype.htmlInsert = function(){
-   let results = this.noteListView.display()
-   document.getElementById("app").innerHTML = results
+   return this.HTML().innerHTML = this.noteListView.display()
+   // let results = this.noteListView.display()
+   // document.getElementById("app").innerHTML = results
+ }
+
+ NoteController.prototype.HTML = function(){
+   return document.getElementById('app')
  }
 
 exports.NoteController = NoteController;
 })(this);
 
 
-window.onload = function(){
-  var notelist = new NoteList();
-  var controller = new NoteController(notelist);
-  controller.htmlInsert()
-
-}
+// window.onload = function(){
+//   var notelist = new NoteList();
+//   var controller = new NoteController(notelist);
+//   controller.htmlInsert()
+//
+// }
