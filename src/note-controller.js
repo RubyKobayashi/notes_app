@@ -8,15 +8,15 @@
  };
 
 
- NoteController.prototype.htmlInsert = function(){
-   return this.HTML().innerHTML = this.noteListView.display()
-   // let results = this.noteListView.display()
-   // document.getElementById("app").innerHTML = results
- }
+   NoteController.prototype.htmlInsert = function(){
+     return this.HTML().innerHTML = this.noteListView.display()
+     // let results = this.noteListView.display()
+     // document.getElementById("app").innerHTML = results
+   }
 
- NoteController.prototype.HTML = function(){
-   return document.getElementById('app')
- }
+   NoteController.prototype.HTML = function(){
+     return document.getElementById('app')
+   }
 
 exports.NoteController = NoteController;
 })(this);

@@ -22,12 +22,10 @@ function testisNoteController(){
     noteController.HTML = function(){
       var doc = document.createElement('app')
       doc.innerHTML = "<div id='app'><li>hello</li></div>"
-      // console.log(doc.htmlInsert)
       return doc
     }
 
-    // console.log(noteController.htmlInsert())
-    assert.isEqual(noteController.htmlInsert() === "<ul><div><li>Favourite drink: seltzer</li></div></ul>")
+    assert.isEqual(noteController.htmlInsert() === "<ul><div><li>Favourite drink: se</li></div></ul>")
     console.log("TestHTMLlist is passing")
   }
 
